@@ -279,4 +279,5 @@ This project is licensed under the MIT License - see the [LICENSE](file:///c%3A/
 
 - Firebase for backend services
 - Bootstrap for responsive design components
-- Chart.js for data visualization
+- Chart.js for data visualization#   b l o o d b a n k  
+ 
