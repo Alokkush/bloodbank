@@ -1,0 +1,17 @@
+{
+  "name": "blood-bank-firebase",
+  "version": "1.0.0",
+  "description": "Blood Bank Management System for Firebase",
+  "main": "public/index.html",
+  "scripts": {
+    "serve": "firebase serve",
+    "deploy": "firebase deploy",
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": ["blood-bank", "firebase", "healthcare"],
+  "author": "Blood Bank Admin",
+  "license": "MIT",
+  "devDependencies": {
+    "firebase-tools": "^12.0.0"
+  }
+}

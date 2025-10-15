@@ -1,0 +1,42 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper function to check if user is admin
+    function isAdmin() {
+      return request.auth != null && 
+             exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    // Users collection - allow read for authenticated users to check roles
+    match /users/{document} {
+      allow read: if request.auth != null;
+      allow write: if isAdmin();
+    }
+    
+    // Admin-only operations for most collections
+    match /donors/{document} {
+      allow create: if true; // Public can register as donors
+      allow read, update, delete: if isAdmin();
+    }
+    
+    match /requests/{document} {
+      allow create: if true; // Public can submit blood requests
+      allow read, update, delete: if isAdmin();
+    }
+    
+    match /donations/{document} {
+      allow read, write: if isAdmin();
+    }
+    
+    match /handover/{document} {
+      allow read, write: if isAdmin();
+    }
+    
+    // Allow public read access to blood inventory
+    match /blood_inventory/{document} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+  }
+}
