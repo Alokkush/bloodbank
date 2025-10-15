@@ -27,15 +27,15 @@ bloodbank/
 
 ### Key Files Description
 
-- **[public/index.html](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/public/index.html)**: The main application file containing all HTML structure, including the login page, admin panel, and public portal.
-- **[public/css/style.css](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/public/css/style.css)**: Comprehensive styling with modern UI elements, glass morphism effects, and responsive design.
-- **[public/js/app.js](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/public/js/app.js)**: Firebase integration logic, authentication handling, and client-side application functionality.
-- **[DEPLOY_INSTRUCTIONS.md](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/DEPLOY_INSTRUCTIONS.md)**: Detailed deployment guide for hosting the application on Firebase.
-- **[FIREBASE_SETUP.md](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/FIREBASE_SETUP.md)**: Step-by-step Firebase configuration instructions.
-- **[firebase.json](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/firebase.json)**: Firebase hosting and Firestore configuration.
-- **[firestore.indexes.json](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/firestore.indexes.json)**: Firestore database indexes configuration.
-- **[firestore.rules](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/firestore.rules)**: Security rules for Firestore collections.
-- **[package.json](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/package.json)**: Project metadata, dependencies, and npm scripts.
+- **[public/index.html](public/index.html)**: The main application file containing all HTML structure, including the login page, admin panel, and public portal.
+- **[public/css/style.css](public/css/style.css)**: Comprehensive styling with modern UI elements, glass morphism effects, and responsive design.
+- **[public/js/app.js](public/js/app.js)**: Firebase integration logic, authentication handling, and client-side application functionality.
+- **[DEPLOY_INSTRUCTIONS.md](DEPLOY_INSTRUCTIONS.md)**: Detailed deployment guide for hosting the application on Firebase.
+- **[FIREBASE_SETUP.md](FIREBASE_SETUP.md)**: Step-by-step Firebase configuration instructions.
+- **[firebase.json](firebase.json)**: Firebase hosting and Firestore configuration.
+- **[firestore.indexes.json](firestore.indexes.json)**: Firestore database indexes configuration.
+- **[firestore.rules](firestore.rules)**: Security rules for Firestore collections.
+- **[package.json](package.json)**: Project metadata, dependencies, and npm scripts.
 
 ## 🚀 Setup Instructions
 
@@ -75,7 +75,7 @@ bloodbank/
 5. **Update Firebase Configuration:**
    - Go to Firebase Console > Project Settings > General
    - Copy your Firebase config object
-   - Replace the config in [public/js/app.js](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/public/js/app.js)
+   - Replace the config in [public/js/app.js](public/js/app.js)
 
 ## 🔧 Technology Stack
 
@@ -166,7 +166,7 @@ bloodbank/
    - Click "Web" icon to add a web app
    - Register app with name "Blood Bank Web"
    - Copy the Firebase configuration object
-   - Replace the config in [public/js/app.js](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/public/js/app.js)
+   - Replace the config in [public/js/app.js](public/js/app.js)
 
 7. **Set Up Authentication**
    - In Firebase Console, go to Authentication > Sign-in method
@@ -230,9 +230,9 @@ bloodbank/
 - Secure authentication
 
 ### Customization
-- Update Firebase config in [public/js/app.js](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/public/js/app.js)
-- Modify styles in [public/css/style.css](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/public/css/style.css)
-- Adjust Firestore rules in [firestore.rules](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/firestore.rules)
+- Update Firebase config in [public/js/app.js](public/js/app.js)
+- Modify styles in [public/css/style.css](public/css/style.css)
+- Adjust Firestore rules in [firestore.rules](firestore.rules)
 
 ## 🛠 Development
 
@@ -245,7 +245,7 @@ bloodbank/
 ### Project Customization
 
 1. **Update Firebase Configuration**
-   - Replace the Firebase config object in [public/js/app.js](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/public/js/app.js) with your project's configuration
+   - Replace the Firebase config object in [public/js/app.js](public/js/app.js) with your project's configuration
 
 2. **Admin Setup**
    - Create admin user in Firebase Auth Console
@@ -253,7 +253,7 @@ bloodbank/
    - Use the admin email/password to login
 
 3. **Styling**
-   - Modify styles in [public/css/style.css](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/public/css/style.css)
+   - Modify styles in [public/css/style.css](public/css/style.css)
    - The CSS file includes a comprehensive design system with glass morphism effects
 
 ## 🤝 Contributing
@@ -273,11 +273,10 @@ For issues, check:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](file:///c%3A/Users/alokb/OneDrive/Desktop/Projects/bloodbank/LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## 🙏 Acknowledgments
 
 - Firebase for backend services
 - Bootstrap for responsive design components
-- Chart.js for data visualization#   b l o o d b a n k  
- 
+- Chart.js for data visualization
